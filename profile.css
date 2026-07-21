@@ -1,8 +1,11 @@
-/* ========================= */
-/* RESET & BASE STYLES      */
-/* ========================= */
+<!DOCTYPE html>
+<html lang="en">
 
-* {
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile | ESSU-AEC</title>
+<style>* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -483,3 +486,342 @@ body {
         font-size: 0.9rem;
     }
 }
+
+/* ========================= */
+/* DESKTOP COMPACT LAYOUT   */
+/* Fits in one screen       */
+/* ========================= */
+
+@media (min-height: 768px) {
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .page-header {
+        padding: 0.8rem 2rem 0.5rem;
+    }
+    
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .page-header p {
+        font-size: 0.95rem;
+        margin: 0.2rem auto 0;
+    }
+    
+    .main-nav {
+        padding: 0.3rem 2rem;
+    }
+    
+    .main-body {
+        flex: 1;
+        overflow-y: auto;
+        padding: 1rem 2rem;
+        gap: 1rem;
+    }
+    
+    .profile-split-container {
+        gap: 1.5rem;
+    }
+    
+    .profile-card {
+        padding: 1rem 1.5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        text-align: left;
+        gap: 1rem;
+    }
+    
+    .profile-photo img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 0;
+    }
+    
+    .personal-info p {
+        font-size: 0.9rem;
+        margin: 0.1rem 0;
+    }
+    
+    .info-section {
+        padding: 0.8rem 1.2rem;
+    }
+    
+    .info-section h2 {
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .info-section p,
+    .info-section ul,
+    .info-section ol {
+        margin: 0.2rem 0;
+        font-size: 0.9rem;
+    }
+    
+    .info-section ul,
+    .info-section ol {
+        padding-left: 1.2rem;
+    }
+    
+    .subjects-table table {
+        font-size: 0.82rem;
+    }
+    
+    .subjects-table table th,
+    .subjects-table table td {
+        padding: 0.2rem 0.5rem;
+    }
+    
+    .contact-form form {
+        padding: 0.8rem 1rem;
+    }
+    
+    .contact-form .form-group {
+        margin-bottom: 0.5rem;
+    }
+    
+    .contact-form label {
+        font-size: 0.85rem;
+    }
+    
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form select,
+    .contact-form textarea {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.85rem;
+    }
+    
+    .contact-form textarea {
+        height: 50px;
+    }
+    
+    .location-iframe iframe {
+        height: 200px;
+    }
+    
+    .page-footer {
+        padding: 0.4rem 2rem;
+        margin-top: 0;
+        font-size: 0.85rem;
+    }
+}
+     </style>
+</head>
+
+<body>
+
+    <!-- ============================================================ -->
+    <!-- HEADER                                                       -->
+    <!-- ============================================================ -->
+
+    <header class="page-header">
+        <h1>Student Profile</h1>
+        <p>
+            This page contains the profile information of Atasha Andrae Marteja enrolled at
+            <strong>Eastern Samar State University – Arteche Extension Campus</strong>.
+        </p>
+    </header>
+
+    <!-- ============================================================ -->
+    <!-- NAVIGATION                                                   -->
+    <!-- ============================================================ -->
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="campus-life.html">Campus Life</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ============================================================ -->
+    <!-- MAIN CONTENT                                                 -->
+    <!-- ============================================================ -->
+
+    <main class="main-body">
+
+        <!-- Split Layout Container (Left & Right Columns) -->
+        <div class="profile-split-container">
+
+            <!-- -------- LEFT COLUMN -------- -->
+            <section class="left-column">
+
+                <!-- Profile Info -->
+                <div class="profile-card">
+                    <div class="profile-photo">
+                        <img src="./assets/images/AtashaAndrae.jpg" alt="Student Picture" width="200" height="200" />
+                    </div>
+                    <div class="personal-info">
+                        <h2>Personal Information</h2>
+                        <p><strong>Full Name:</strong> Atasha Andrae Marteja</p>
+                        <p><strong>Student Number:</strong> 23-04762</p>
+                        <p><strong>Program:</strong> Bachelor of Science in Information Technology</p>
+                        <p><strong>Year Level:</strong> Fourth Year</p>
+                        <p><strong>Email:</strong> ndrae.marteja@gmail.com</p>
+                        <p><strong>Address:</strong> Arteche,Eastern Samar Philippines</p>
+                    </div>
+                </div>
+
+                <!-- Biography -->
+                <section class="info-section">
+                    <h2>Biography</h2>
+                    <p>
+                        Atasha Andrae Marteja is currently taking Bachelor of Science in Information
+                        Technology. She enjoys learning web development, programming,
+                        database management, and networking.
+                    </p>
+                </section>
+
+                <!-- Skills -->
+                <section class="info-section">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Microsoft Office</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </section>
+
+                <!-- Educational Background -->
+                <section class="info-section">
+                    <h2>Educational Background</h2>
+                    <ol>
+                        <li>Rizal Central Elementary School</li>
+                        <li>Arteche National High School</li>
+                        <li>Eastern Samar States University</li>
+                    </ol>
+                </section>
+
+            </section>
+
+            <!-- -------- RIGHT COLUMN -------- -->
+            <section class="right-column">
+
+                <!-- Current Subjects (table) -->
+                <section class="info-section subjects-table">
+                    <h2>Current Subjects</h2>
+
+    <table border="1" cellpadding="10">
+      <tr>
+        <th>Course Code</th>
+        <th>Description</th>
+        <th>Instructor</th>
+        <th>Schedule</th>
+      </tr>
+
+      <tr>
+        <td>IT 411*</td>
+        <td>Capstone Project and Programming 2</td>
+        <td>Mr. Emiliano Borata</td>
+        <td>TTH 7:30-10:30 AM</td>
+      </tr>
+
+      <tr>
+        <td>IT 413*</td>
+        <td>IT Elective 3</td>
+        <td>Mr. Anthony Morallos</td>
+        <td>TTH 10:30-12:30 PM</td>
+      </tr>
+
+      <tr>
+        <td>IT_414</td>
+        <td>Data Visualization</td>
+        <td>Mr. Glenn Amoyan</td>
+        <td>MW 7:30-10:30</td>
+      </tr>
+    </table>
+
+                </section>
+
+            </section>
+
+        </div> <!-- End of Split Layout Container -->
+
+        <!-- -------- FULL WIDTH SECTIONS -------- -->
+
+        <!-- Contact Form -->
+        <section class="info-section contact-form full-width">
+            <h2>Contact the Student</h2>
+            <form>
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" />
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course:</label>
+                    <select id="course" name="course">
+                        <option>BSIT</option>
+                        <option>BSEd</option>
+                        <option>BEEd</option>
+                        <option>BSHM</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male" /> Male</label>
+                        <label><input type="radio" name="gender" value="female" /> Female</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Interests</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="interests" value="programming" /> Programming</label>
+                        <label><input type="checkbox" name="interests" value="networking" /> Networking</label>
+                        <label><input type="checkbox" name="interests" value="multimedia" /> Multimedia</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Clear" />
+                </div>
+            </form>
+        </section>
+
+        <!-- School Location (iframe) -->
+        <section class="info-section location-iframe full-width">
+            <h2>School Location</h2>
+            <iframe
+                src="https://www.google.com"
+                width="100%"
+                height="350"
+                title="School Location Map">
+            </iframe>
+        </section>
+
+    </main>
+
+    <!-- ============================================================ -->
+    <!-- FOOTER                                                       -->
+    <!-- ============================================================ -->
+
+    <footer class="page-footer">
+        <p>&copy; 2026 <span>ESSU – Arteche</span></p>
+    </footer>
+
+</body>
+
+</html>
